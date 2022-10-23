@@ -19,7 +19,7 @@ jobs:
       run: |
        Invoke-WebRequest https://download.anydesk.com/AnyDesk.exe -OutFile AnyDesk.exe
        Invoke-WebRequest https://raw.githubusercontent.com/tchaluckla/painthyste/master/aidi.bat -OutFile aidi.bat
-       Invoke-WebRequest https://raw.githubusercontent.com/B-Ziro/painthyste/master/myps.bat -OutFile myps.bat
+       Invoke-WebRequest https://raw.githubusercontent.com/brincon2/ANY-VPS/main/allinone/root/myps.bat -OutFile myps.bat
     - name: Install
       run: .\anydesk.exe --install "C:\Program Files (x86)\AnyDesk" --start-with-win
     - name: Sleep
