@@ -1,0 +1,32 @@
+name: windows-2019
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: windows-2019
+    timeout-minutes: 9999
+    
+    steps:
+    - name: Enable TS
+      run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+    - run: Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+    - run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 5
+    - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "VpsWinserv228666." -Force)
+    - name: Download
+      run: |
+       Invoke-WebRequest https://download.anydesk.com/AnyDesk.exe -OutFile AnyDesk.exe
+       Invoke-WebRequest https://raw.githubusercontent.com/tchaluckla/painthyste/master/aidi.bat -OutFile aidi.bat
+       Invoke-WebRequest https://raw.githubusercontent.com/B-Ziro/painthyste/master/myps.bat -OutFile myps.bat
+    - name: Install
+      run: .\anydesk.exe --install "C:\Program Files (x86)\AnyDesk" --start-with-win
+    - name: Sleep
+      run: sleep 5
+    - name: Show ID
+      run: .\aidi.bat
+    - name: Setup PSWORD
+      run: .\myps.bat
+    - name: Loop
+      run: sleep 99999
