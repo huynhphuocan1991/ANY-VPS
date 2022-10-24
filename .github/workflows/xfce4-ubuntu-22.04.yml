@@ -1,0 +1,42 @@
+iname: XFCE4-ubuntu-22.04
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-22.04
+    env:
+      TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+      PASSWORD: ${{ github.actor }}
+    timeout-minutes: 9999
+
+    steps:
+    - name: Update Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get upgrade
+    - name: Setup Password
+      run: echo runner:$PASSWORD | sudo chpasswd
+    - name: Install XRDP
+      run: |
+        sudo apt-get install xrdp
+        sudo adduser xrdp ssl-cert
+        echo xfce4-session > ~/.xsession
+    - name: Install XFCE4
+      run: |
+        sudo apt-get install xfce4 xfce4-terminal
+        sudo service xrdp restart
+    - name: Download
+      run: |
+        wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+        wget https://gist.githubusercontent.com/ging-dev/2e233b837ce0ebf7688b31af46d2ab21/raw/8b6f7e90904a4c4dd4033c7ed1650e8ba4506abe/xfce4.php
+        unzip ngrok-stable-linux-amd64.zip
+    - name: Run NGROK
+      run: |
+        ./ngrok authtoken $TOKEN
+        ./ngrok tcp 3389 > /dev/null &
+    - name: Setup VPS
+      run: php xfce4.php
+    - name: Running
+      run: sleep 18000

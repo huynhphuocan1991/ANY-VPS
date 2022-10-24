@@ -1,0 +1,39 @@
+name: UBUNTU-SSH
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+      PASSWORD: ${{ github.actor }}
+    timeout-minutes: 9999
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup password
+      run: echo runner:$PASSWORD | sudo chpasswd
+    - name: Use CACHE
+      id: cache
+      uses: actions/cache@v2
+      with:
+        path: |
+          ngrok
+          ubuntu-ssh.php
+        key: cache
+    - name: Download
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+        wget https://gist.githubusercontent.com/ging-dev/6ed0824dcc386f71395f000f12d6d96f/raw/75e01d58d130101c22490342da3dfd0e87090a6f/ubuntu-ssh.php
+        unzip ngrok-stable-linux-amd64.zip
+    - name: Run NGROK
+      run: |
+        ./ngrok authtoken $TOKEN
+        ./ngrok tcp 22 > /dev/null &
+    - name: Setup SSH
+      run: php ubuntu-ssh.php
+    - name: Running
+      run: sleep 18000
