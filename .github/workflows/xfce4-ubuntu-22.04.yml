@@ -1,4 +1,4 @@
-iname: XFCE4-ubuntu-22.04
+name: C-xfce4-ubuntu-22
 
 on: workflow_dispatch
 
