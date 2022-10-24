@@ -1,4 +1,4 @@
-name: windows-2022
+name: A-windows-2022
 
 on: 
   workflow_dispatch:
