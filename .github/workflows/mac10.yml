@@ -1,4 +1,4 @@
-name:  macOS 10
+name:  B-macOS 10
 on: 
   workflow_dispatch:
 defaults:
