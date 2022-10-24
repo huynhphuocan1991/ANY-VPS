@@ -1,4 +1,4 @@
-iname: C-xfce4-ubuntu-18
+name: C-xfce4-ubuntu-18
 
 on: workflow_dispatch
 
