@@ -1,4 +1,4 @@
-name:  macOS Big Sur 11
+name:  B-macOS Big Sur 11
 on: 
   workflow_dispatch:
 defaults:
