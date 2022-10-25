@@ -21,3 +21,10 @@ aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/PowerISO.e
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/qbittorrent_4.4.2_x64_setup_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/vlc-3.0.16-win64_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/WinRAR.6.02.en.Silent.Install.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/IntelliJ_IDEA_SILEN.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/ideaIC-2022.2.3.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/android-studio-.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/android-studio-_silent.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/Sib.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/StudioPortable.7z
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/VMware%20ThinApp%20Enterprise%205.2.10.zip
