@@ -2,7 +2,8 @@
 mkdir Apps
 cd "C:\Users\runneradmin\Desktop\Apps"
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/7z2107-x64_silent.exe
-aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/BraveBrowserSetup.exehttps://github.com/brincon2/ANY-VPS/releases/download/Apps/FileZilla.v3.45.1.64-bit._silent.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/BraveBrowserSetup.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/FileZilla.v3.45.1.64-bit._silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/Internet.Download.Manager.6.40.8.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/MEGAsyncSetup64_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/MyLanViewer-setup_silent.exe
@@ -28,3 +29,4 @@ aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/android-st
 aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/Sib.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/StudioPortable.7z
 aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/VMware%20ThinApp%20Enterprise%205.2.10.zip
+aria2c.exe https://raw.githubusercontent.com/brincon2/ANY-VPS/main/allinone/install-basic-software.cmd
