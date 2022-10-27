@@ -4,7 +4,7 @@ mode con:cols=50 lines=5
 @echo off
 start /wait 7z2107-x64_silent.exe
 start /wait FileZilla.v3.45.1.64-bit._silent.exe
-start /wait Internet.Download.Manager.6.40.8.exe
+start /wait Internet-Download-Manager-6.41.3%20AIO-Silent-Install.exe
 start /wait npp.8.3.3.Installer.x64_silent.exe
 start /wait NTH.-.1.Click.Foxit.10.0.0.35798.exe
 start /wait NTH.-.1.Click.Klite.15.5.0.exe
