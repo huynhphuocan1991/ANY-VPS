@@ -8,7 +8,7 @@ aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/IDM-6.41.3
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/MEGAsyncSetup64_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/MyLanViewer-setup_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/MySFXInstaller.exe
-aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/npp.8.3.3.Installer.x64_silent.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/npp.8.4.6.Installer.x64_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/NTH.-.1.Click.DirectX.9.0.June.2010.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/NTH.-.1.Click.Foxit.10.0.0.35798.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/NTH.-.1.Click.Klite.15.5.0.exe
