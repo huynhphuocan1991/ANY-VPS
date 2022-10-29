@@ -4,7 +4,7 @@ cd "C:\Users\runneradmin\Desktop\Apps"
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/7z2107-x64_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/BraveBrowserSetup.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/FileZilla.v3.45.1.64-bit._silent.exe
-aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/Internet-Download-Manager-6.41.3%20AIO-Silent-Install.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/IDM-6.41.3-AIO-Silent-Install.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/MEGAsyncSetup64_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/MyLanViewer-setup_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/MySFXInstaller.exe
