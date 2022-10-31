@@ -32,3 +32,4 @@ aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/ThinAppPor
 aria2c.exe https://raw.githubusercontent.com/brincon2/ANY-VPS/main/allinone/install-basic-software.cmd
 aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/Silent-Install-Builder-v6.1.1.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/AppNee.com.VMware.ThinApp.Enterprise.v2206.0.0.Portable.FR.7z
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/GoogleDriveSetup.exe
