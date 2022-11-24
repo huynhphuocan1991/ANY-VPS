@@ -34,3 +34,5 @@ aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/Silent-Ins
 aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/AppNee.com.VMware.ThinApp.Enterprise.v2206.0.0.Portable.FR.7z
 aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/GoogleDriveSetup.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/UniExtractRC3_silent.exe
+aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/install-mini-software.cmd
+aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/4K.Video.Downloader.4.22.1.5160.rar
