@@ -36,3 +36,4 @@ aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/root/GoogleDriv
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/UniExtractRC3_silent.exe
 aria2c.exe https://github.com/brincon2/ANY-VPS/raw/main/allinone/install-mini-software.cmd
 aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/4K.Video.Downloader.4.22.1.5160.rar
+aria2c.exe https://github.com/brincon2/ANY-VPS/releases/download/Apps/FDM.6.18.1.32-bit_64-bit.exe
