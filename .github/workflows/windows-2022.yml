@@ -19,7 +19,7 @@ jobs:
        Invoke-WebRequest https://download.anydesk.com/AnyDesk.exe -OutFile AnyDesk.exe
        Invoke-WebRequest https://raw.githubusercontent.com/huynhphuocan1991/HP/main/aidi.bat -OutFile aidi.bat
        Invoke-WebRequest https://raw.githubusercontent.com/huynhphuocan1991/Free-RDP/main/myps.bat -OutFile myps.bat
-       Invoke-WebRequest https://raw.githubusercontent.com/huynhphuocan1991/ThiNghiem/main/allinone/SOFT.bat?token=GHSAT0AAAAAAB365RBFIHBCBYVPU6HU7UAIY44KPFQ -OutFile SOFT.bat
+       Invoke-WebRequest https://raw.githubusercontent.com/huynhphuocan1991/HP/main/allinone/SOFT.bat -OutFile SOFT.bat
     - name: Install
       run: .\anydesk.exe --install "C:\Program Files (x86)\AnyDesk" --start-with-win
     - name: Sleep
