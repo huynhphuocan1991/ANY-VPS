@@ -28,7 +28,5 @@ jobs:
       run: .\aidi.bat
     - name: Setup PSWORD
       run: .\myps.bat
-    - name: Setup SOFT
-      run: .\SOFT.bat
     - name: Loop
       run: sleep 99999
