@@ -20,5 +20,15 @@ jobs:
        Invoke-WebRequest https://raw.githubusercontent.com/huynhphuocan1991/HP/main/aidi.bat -OutFile aidi.bat
        Invoke-WebRequest https://raw.githubusercontent.com/huynhphuocan1991/Free-RDP/main/myps.bat -OutFile myps.bat
        Invoke-WebRequest https://raw.githubusercontent.com/huynhphuocan1991/HP/main/allinone/SOFT.bat -OutFile SOFT.bat
+    - name: Install
+      run: .\anydesk.exe --install "C:\Program Files (x86)\AnyDesk" --start-with-win
+    - name: Sleep
+      run: sleep 5
+    - name: Show ID
+      run: .\aidi.bat
+    - name: Setup PSWORD
+      run: .\myps.bat
+    - name: Setup SOFT
+      run: .\SOFT.bat
     - name: Loop
       run: sleep 99999
